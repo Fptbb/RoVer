@@ -1,68 +1,69 @@
 ---
-layout: home
+layout: Inicio
 ---
 # Guia inicial
-The quickest and easiest way to use RoVer is to [add the hosted version](https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264) to your server. These are all optional:
+A maneira mais fácil de usar o RoVer é [Adicionar a versão hospedada](https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264) no seu servidor. Tudo isso é opcional:
 
-1. Create a role&mdash;it can be called anything, but most name it "Verified"&mdash;that will be given to all verified users.
-2. Drag the "RoVer" role above your role and any roles you would like RoVer to manage.
-3. Run the command `!VerifiedRole RoleNameHere`, replacing "RoleNameHere" with what your role is called.
-4. Modify your channel permissions so that only those with the role you made can speak or see them.
-5. Run the command `!CreateVerifyChannel`, which will create an instructional channel for new members of your server.
+1. Criar um cargo—;Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado"—;Esse é o qual todos os membros verificados iram receber.
+2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
+3. Execute o comando `!VerifiedRole RoleNameHere`, repondo o "RoleNameHere" para o nome do cargo que queiras.
+4. Modifique suas permissões de canal de texto, assim somente quem tem o cargo que você criou poderá ver/ler e falar nos canais de texto.
+5. Execute o comando `!CreateVerifyChannel`, que irá criar um canal de texto con instruções de verificação para novos membros.
 
-If you have a group, you can run `!CreateGroupRanks <groupid>` to create roles and bind them to the ranks from your group.
+Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <groupid>` para criar os cargos vinculados ao seu grupo.
 
-# What is it?
+# Oque é isso?
 
-RoVer is an open source, drop-in Discord verification bot that will allow your members to safely authenticate their Roblox account on your Discord server. This empowers your Roblox community with the following advantages:
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo Fptbb.
+O RoVer é um bot do discord, com código aberto que permitirá que seus membros autentiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
-- Speak with confidence, because everyone is who their name says they are.
-- Adding an extra step between trolls & spammers and your server will drastically reduce unwanted activity.
-- Integrate closely with Roblox groups, showing ranks and giving roles based on group membership.
-- The verification database is already populated with hundreds of thousands of Discord-Roblox account links, so it's possible users will already be verified when they join your server.
-- The official version of RoVer can handle bigger servers and will automatically be able to update roles the second a user verifies. (If you host RoVer yourself, the user will have to run a command in order for the verification to take place.)
+- Falar com confiança, pois todo mundo sabe quem é quem.
+- Adicionando um passo extra entre os trolls & spammers reduzindo drasticamene atividades não desejadas.
+- Integrando com o seu grupo no Roblox, mostrando ranks e dando cargos baseados no do seu grupo
+- O banco de dados de verificação já preenchido com milhares de contas Discord-Roblox, ou seja alguns membros já podem entrar verificados no seu servidor. 
+- A versão oficial do RoVer pode lidar com servidores maiores e será capaz de atualizar automaticamente as funções assim que um usuário verificar. (Se você hospedar o RoVer, o usuário precisará executar um comando para que a verificação ocorra.)
 
-# Using RoVer
+# Usando o RoVer
 
-When a user joins your server, the bot will automatically check if they are already in our database, and if so, they will be verified immediately. If they are not already in the database, they will be instructed to go to the verification website to verify themselves. If you are using the hosted version of the bot, then the user will automatically be given the verified state after they verify on the website. **However**, if you are hosting the bot yourself, the user will have to run the `!verify` command in order for the bot to check if they are verified.
+Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário está no nosso banco de dados e ele possivelmente será verificado automaticamente. Se eles ainda não estiverem no banco de dados. If you are using the hosted version of the bot, then the user will automatically be given the verified state after they verify on the website. **However**, if you are hosting the bot yourself, the user will have to run the `!verify` command in order for the bot to check if they are verified.
 
 You should probably make a read-only channel in the server explaining these processes to your members. (You can do this automatically with the !CreateVerifyChannel command). After you add the bot to your server, you can customize RoVer with the following commands. You must have the `Manage Server` permission or a role named "RoVer Admin" in the Discord server in order to use these commands.
 
 <span class="warn">**Please note** that the "RoVer" role must be above any other roles that you want RoVer to act on. Anyone with a role that's above the RoVer role will not be able to be verified. This is just how the Discord permission system works, so please make sure to account for it!</span>
 
-## Commands
+## Comandos
 <span class="info">**Note**: &lt;angled brackets&gt; denote *required* arguments, and [square brackets] denote *optional* arguments. They should not be included when you run the command.</span>
 
 You can run any of the commands that have all optional arguments by themselves to set them back to their default state.
-### Server Configuration
-#### Nickname configuration
+### Configuração do Servidor
+#### Configuração de apeliddos
 - `!Nickname <on|off>` - Set whether or not new users will be nicknamed to their Roblox name. Default `on`.
 - `!NicknameFormat [format]` - Set the nickname format, so you could have the nickname include their roblox id or discord name, for example. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Default `%USERNAME%`.
 - `!NicknameGroup [group_id]` - The group ID to use for the %RANK% replacement in nicknames. This allows you to make your usernames look like [this](https://i.imgur.com/4VA1vq9.png). Note that if your group rank name on Roblox.com starts with something in brackets like "[PVT] Private", only the "[PVT]" will be used for the nickname. Otherwise, the entire rank name is used. Default `null`.
 
-#### Channel configuration
-- `!AnnounceChannel [channel]` - Set a channel that the bot will post a message to every time someone verifies. Default `null`.
-- `!VerifyChannel [channel]` - Set a channel that the bot will delete all messages in except for verification messages. Default `null`.
-- `!CreateVerifyChannel` Creates a channel category with verification instructions for new members and a channel for users to verify themselves.
+#### Configuração de Canal
+- `!AnnounceChannel [channel]` - Defina um canal onde o RoVerificação postará uma mensagem todo vez que alguém se verificar. Default `null`.
+- `!VerifyChannel [channel]` - Defina um canal onde o RoVerificação irá apagar todas as mensagens exeto as de verificação. Default `null`.
+- `!CreateVerifyChannel` - Crie um categoria com dois canais. Um para ensinar a fazer a verificação, e outro para executar a verificação aos membros. Default `null`
 
 #### Other
 - `!JoinDM <on|off>` Set whether or not new users will be automatically direct messaged with verification instructions when joining this server. Default `on`.
 - `!WelcomeMessage [welcome message]` - Set the message the user gets when they verify. Will be sent in DMs unless they use `!verify` command. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
-- `@RoVer prefix [prefix]` - Change the command prefix. (Default: `!`)
+- `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`)
 
 ### Ranks
-- `!VerifiedRole [exact role name]` - Set the role that verified members will get. Default `null`.
-- `!UnverifiedRole [exact role name]` - Set the role that non-verified members will get. Default `null`.
+- `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Default `null`.
+- `!UnverifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros não verificados iram ter. Default `null`.
 - `!Bind <"exact role name"> <group_id>:<rank_id> [<group_id>:<rank_id>]...` Binds Roblox group membership or group rank to a Discord role. Put the Discord role name in quotes. Please see [Integrating with Roblox Groups](#integrating-with-roblox-groups).
 - `!Unbind <exact role name>` - Unbinds this role from any group ranks.
 - `!UnbindAll` - Removes all group bindings configured for this server.
 - `!Bindings` - Shows a list of all bound roles.
 - `!CreateGroupRanks <group_id>` - Creates Discord roles from all of the roles in a given group, and then binds them to the group. (If a role already exists with a name matching a group rank, that role will be used instead of creating a new one.)
 
-### Help and Support
-- `!RoVer` - Displays a description of RoVer.
-- `!Help` - Displays a list of commands.
-- `!Support` - Posts a link to the official RoVer Discord server
+### Ajuda e suporte
+- `!RoVer` - Exibe uma descrição do RoVer.
+- `!Help` - Exibe uma lista de comandos.
+- `!Support` - Pos
 - `!Invite` - Posts an invite link for RoVer.
 
 ### User administration
