@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-# Jump Start Guide
+# Guia inicial
 The quickest and easiest way to use RoVer is to [add the hosted version](https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264) to your server. These are all optional:
 
 1. Create a role&mdash;it can be called anything, but most name it "Verified"&mdash;that will be given to all verified users.
