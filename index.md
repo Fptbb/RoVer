@@ -1,6 +1,10 @@
 ---
 layout: home
 ---
+
+
+
+
 <span class="warn">**Aviso!** O site não está 100% traduzido ao português brasileiro, previsão de 24h para a tradução total!</span>
 
 # Guia inicial
