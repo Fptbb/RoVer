@@ -2,7 +2,7 @@
 layout: home
 ---
 # Guia inicial
-A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264) no seu servidor. Tudo isso é opcional:
+A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Tudo isso é opcional:
 
 1. Criar um cargo —;(Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado")—; Esse é o qual todos os membros verificados iram receber.
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
@@ -32,13 +32,13 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 <span class="warn">**Porfavor, olhe!** Para que o RoVer funcione corretamente o cargo "RoVer" deve estar acima de todos os que o mesmo irá gerenciar. Se não, o bot não irá funcionar corretamente!</span>
 
 ## Comandos
-<span class="info">**Note**: &lt;angled brackets&gt; denote *required* arguments, and [square brackets] denote *optional* arguments. They should not be included when you run the command.</span>
+<span class="info">**Nota**: &lt;Colchetes angulares&gt; Não são argumentos *requiridos*, e os [colchetes] são argumentos *opcionais*. Esses argumentos não seram necessários na execução de um comando </span>
 
-You can run any of the commands that have all optional arguments by themselves to set them back to their default state.
-### Configuração do Servidor
+## Configuração do Servidor
+
 #### Configuração de apeliddos
-- `!Nickname <on|off>` - Set whether or not new users will be nicknamed to their Roblox name. Default `on`.
-- `!NicknameFormat [format]` - Set the nickname format, so you could have the nickname include their roblox id or discord name, for example. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Default `%USERNAME%`.
+- `!Nickname <on|off>` - Defina se um novo usuário irá ser nomeado com seu apelido do Roblox ou não. Comum `on`
+- `!NicknameFormat [format]` - Set the nickname format, so you could have the nickname include their roblox id or discord name, for example. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Comum `%USERNAME%`
 - `!NicknameGroup [group_id]` - The group ID to use for the %RANK% replacement in nicknames. This allows you to make your usernames look like [this](https://i.imgur.com/4VA1vq9.png). Note that if your group rank name on Roblox.com starts with something in brackets like "[PVT] Private", only the "[PVT]" will be used for the nickname. Otherwise, the entire rank name is used. Default `null`.
 
 #### Configuração de Canal
@@ -46,7 +46,7 @@ You can run any of the commands that have all optional arguments by themselves t
 - `!VerifyChannel [channel]` - Defina um canal onde o RoVerificação irá apagar todas as mensagens exeto as de verificação. Default `null`.
 - `!CreateVerifyChannel` - Crie um categoria com dois canais. Um para ensinar a fazer a verificação, e outro para executar a verificação aos membros. Default `null`
 
-#### Other
+#### Outro
 - `!JoinDM <on|off>` Set whether or not new users will be automatically direct messaged with verification instructions when joining this server. Default `on`.
 - `!WelcomeMessage [welcome message]` - Set the message the user gets when they verify. Will be sent in DMs unless they use `!verify` command. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
 - `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`)
@@ -63,7 +63,7 @@ You can run any of the commands that have all optional arguments by themselves t
 ### Ajuda e suporte
 - `!RoVer` - Exibe uma descrição do RoVer.
 - `!Help` - Exibe uma lista de comandos.
-- `!Support` - Pos
+- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês)
 - `!Invite` - Posts an invite link for RoVer.
 
 ### Administração de usuário
@@ -175,3 +175,11 @@ If you want users' group ranks to appear in their nickname, like "[PVT] evaera",
 - Ensure the RANK is present somewhere in the nickname format: `!NicknameFormat %RANK% %USERNAME%`
 - Configure the group id to be used for the ranks: `!NicknameGroup 372372`
 - RoVer will automatically pick up on rank labels, so if the group rank is named "[PVT] Private", RoVer will only use the "[PVT]" for the nickname. If there is no label in the rank name, then RoVer will use the entire rank name instead.
+
+### RoVer Brazil 
+
+Feito com `Amor 💚` por:
+Fptbb 💛
+RafaRB 🌈
+
+``Projeto Original:`` [evaera](https://github.com/evaera/RoVer)
