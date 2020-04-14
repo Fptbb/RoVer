@@ -52,10 +52,6 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 - `!WelcomeMessage [welcome message]` - Defina a mensagem de boas vindas quando um usuário executar o comando `!verify`. Os argumentos válidos são: `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
 - `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`) <span class="note">**Temporariamente indisponível**</span>
 
-
-<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 24h para a tradução total!</span>
-
-
 ### Ranks
 - `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Pré-Definido `nulo`.
 - `!UnverifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros não verificados iram ter. Pré-Definido `nulo`.
@@ -85,6 +81,8 @@ Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um 
 - `RoVer Nickname Bypass` - A mesma coisa que o RoVer Bypass, mas apenas para nomes de usuário. Cargos ainda seram dados.
 - `RoVer Admin` - o RoVer deixará todo mundo que tenha o cargo "RoVer Admin" a executar qualquer comando do rover no servidor mesmo que ele não tenha a permissão de `"MANEGE SERVER"`
 - `RoVer Updater` - Com o cargo "RoVer Updater", qualquer pessoa pode executar o comando `!update` e outros comandos, menos os de admins
+
+<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 15h para a tradução total!</span>
 
 ## Integrando Com Os Grupos Do Roblox
 Group bindings can be created to keep Discord roles up to date with Roblox group ranks. RoVer does not support or plan to support changing group ranks or shouts on Roblox.com, and you should be wary of any bots that offer this functionality, as this introduces a major security risk.
