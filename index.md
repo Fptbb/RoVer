@@ -3,9 +3,9 @@ layout: home
 ---
 
 # Guia inicial
-A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Tudo isso é opcional:
+A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Temos um exemplo de como fazer a verificação no seu servidor, tudo isso é opcional:
 
-1. Criar um cargo —;(Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado")—; Esse é o qual todos os membros verificados iram receber.
+1. Criar um cargo (Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado") Esse é o qual todos os membros verificados iram receber.
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
 3. Execute o comando `!VerifiedRole NomeExatoDoCargoAqui`, repondo o "RoleNameHere" para o nome do cargo que queiras.
 4. Modifique suas permissões de canal de texto, assim somente quem tem o cargo que você criou poderá ver/ler e falar nos canais de texto.
@@ -22,7 +22,7 @@ O RoVer é um bot do discord, com código aberto que permitirá que seus membros
 - Adicionando um passo extra entre os trolls & spammers reduzindo drasticamene atividades não desejadas.
 - Integrando com o seu grupo no Roblox, mostrando ranks e dando cargos baseados no do seu grupo
 - O banco de dados de verificação já preenchido com milhares de contas Discord-Roblox, ou seja alguns membros já podem entrar verificados no seu servidor. 
-- A versão oficial do RoVer pode lidar com servidores maiores e será capaz de atualizar automaticamente as funções assim que um usuário verificar. (Se você hospedar o RoVer, o usuário precisará executar um comando para que a verificação ocorra.)
+- Após fazer a verificação no site, você precisará digitar o comando `!verificar`
 
 # Usando o RoVer
 
@@ -49,44 +49,44 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 
 #### Outros
 - `!JoinDM <on|off>` Defina se novos usuários serão ou não automaticamente direcionados à mensagem automática com instruções de verificação ao ingressar neste servidor.
-- `!WelcomeMessage [welcome message]` - Set the message the user gets when they verify. Will be sent in DMs unless they use `!verify` command. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
-- `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`)
+- `!WelcomeMessage [welcome message]` - Defina a mensagem de boas vindas quando um usuário executar o comando `!verify`. Os argumentos válidos são: `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
+- `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`) <span class="note">**Temporariamente indisponível**</span>
 
 
 <span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 24h para a tradução total!</span>
 
 
 ### Ranks
-- `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Default `null`.
-- `!UnverifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros não verificados iram ter. Default `null`.
-- `!Bind <"exact role name"> <group_id>:<rank_id> [<group_id>:<rank_id>]...` Binds Roblox group membership or group rank to a Discord role. Put the Discord role name in quotes. Please see [Integrating with Roblox Groups](#integrating-with-roblox-groups).
-- `!Unbind <exact role name>` - Unbinds this role from any group ranks.
-- `!UnbindAll` - Removes all group bindings configured for this server.
-- `!Bindings` - Shows a list of all bound roles.
-- `!CreateGroupRanks <group_id>` - Creates Discord roles from all of the roles in a given group, and then binds them to the group. (If a role already exists with a name matching a group rank, that role will be used instead of creating a new one.)
+- `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Pré-Definido `nulo`.
+- `!UnverifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros não verificados iram ter. Pré-Definido `nulo`.
+- `!Bind <"Nome Exato Do Cargo"> <IdDoGrupo>:<IdDoRank>...` Vincula um cargo do discord a um cargo no seu grupo do roblox. Bote o nome do cargo do discord em aspas quando executar o comando (ex: !Bind "staff" id do grupo:id do rank). Porfavor veja: [Integrando Com Os Grupos Do Roblox](#integrando-com-os-grupos-do-roblox).
+- `!Unbind <Nome Exato Do Cargoo>` - desvincula um bind do cargo do discord.
+- `!UnbindAll` - Remova Todos os bindings dos cargos do Discord.
+- `!Bindings` - Mostra uma lista de todos os cargos vinculados.
+- `!CreateGroupRanks <IdDoGrupo>` - Cria todos os cargos do grupo do roblox ao discord (Se já estiver um cargo com o mesmo nome o bot irá criar outro cargo)
 
 ### Ajuda e suporte
 - `!RoVer` - Exibe uma descrição do RoVer.
 - `!Help` - Exibe uma lista de comandos.
-- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês) Comunidade [Em Português](https://robr.page/disc)
-- `!Invite` - Posts an invite link for RoVer.
+- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
+- `!Invite` - Postarei o invite do Rover.
 
 ### Administração de usuário
-- `!Update <@user>` - Forcibly update verification status of a user, same as them running `!verify`. Requires "Manage Server" or a role named "RoVer Updater".
+- `!Update <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
 
 ### Comandos De Usuário
-- `!Whois <@user>` - Get a link to a verified user's profile.
-- `!Verify` - Verifies the user who runs this command.
+- `!Whois <@user>` - Obtenha o link do perfil (Do Roblox) de um usuário verificado.
+- `!Verify` - Se verifique com esse comando!
 
 ## Cargos Mágicos
-Magic roles are special role names that can give specific users in your server special power. There are no commands needed to use these, all you need to do is create a role in your server matching these exact names and assign them to users. These roles are checked for by name exactly, so if you create these roles on your server, ensure that they are spelled and capitalized exactly the same as they appear below.
+Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um nome específico para a mágica acontecer, eles fazem com que você não precisa dar nenhuma permissão especial ao cargo, o rover irá identificar que aquela pessoa tem aquele cargo específico e irá permitir o uso do comando! Legal né!
 
-- `RoVer Bypass` - RoVer will ignore users with a role called "RoVer Bypass", so you can give them custom names or give people a member role when they aren't actually verified or in a group.
-- `RoVer Nickname Bypass` - The same as RoVer Bypass, except it only bypasses nicknames. Roles will still be given.
-- `RoVer Admin` - RoVer will allow anyone with a role called "RoVer Admin" to run any of the server commands, even if they don't have Manage Server.
-- `RoVer Updater` - You can also give users a role called "RoVer Updater", which will let the holder of that role run !update on others, but no other admin commands.
+- `RoVer Bypass` -O RoVer irá ignorar as pessoas q tem o cargo "RoVer Bypass", Então, você pode dar apelidos custumizados a uma pessoa, ou você pode atribuir um cargo a uma pessoa mesmo que ela não tenha esse cargo no grupo ou nem esteja no grupo!
+- `RoVer Nickname Bypass` - A mesma coisa que o RoVer Bypass, mas apenas para nomes de usuário. Cargos ainda seram dados.
+- `RoVer Admin` - o RoVer deixará todo mundo que tenha o cargo "RoVer Admin" a executar qualquer comando do rover no servidor mesmo que ele não tenha a permissão de `"MANEGE SERVER"`
+- `RoVer Updater` - Com o cargo "RoVer Updater", qualquer pessoa pode executar o comando `!update` e outros comandos, menos os de admins
 
-## Integrating with Roblox Groups
+## Integrando Com Os Grupos Do Roblox
 Group bindings can be created to keep Discord roles up to date with Roblox group ranks. RoVer does not support or plan to support changing group ranks or shouts on Roblox.com, and you should be wary of any bots that offer this functionality, as this introduces a major security risk.
 
 Group bindings can be created with the `!Bind` command.
