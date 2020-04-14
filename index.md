@@ -1,6 +1,8 @@
 ---
 layout: home
 ---
+<span class="warn">**Aviso!** O site não está 100% traduzido ao português brasileiro, previsão de 24h para a tradução total!</span>
+
 # Guia inicial
 A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Tudo isso é opcional:
 
@@ -36,18 +38,18 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 
 ## Configuração do Servidor
 
-#### Configuração de apeliddos
+#### Configuração de apelidos
 - `!Nickname <on|off>` - Defina se um novo usuário irá ser nomeado com seu apelido do Roblox ou não. Comum `on`
-- `!NicknameFormat [format]` - Set the nickname format, so you could have the nickname include their roblox id or discord name, for example. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Comum `%USERNAME%`
-- `!NicknameGroup [group_id]` - The group ID to use for the %RANK% replacement in nicknames. This allows you to make your usernames look like [this](https://i.imgur.com/4VA1vq9.png). Note that if your group rank name on Roblox.com starts with something in brackets like "[PVT] Private", only the "[PVT]" will be used for the nickname. Otherwise, the entire rank name is used. Default `null`.
+- `!NicknameFormat [formato]` - Defina se o Nome de usuário irá conter o Nome de usuário do roblox, id do usuário do roblox e etc. Por exemplo, argumentos válidos: `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Comum `%USERNAME%`
+- `!NicknameGroup [id_do_grupo]` - O ID do grupo a ser usado para a substituição do %RANK% em apelidos. Isso permite que você faça com que seus nomes de usuário sejam tipo [isso](https://i.imgur.com/4VA1vq9.png). Observe que, se o nome do seu grupo no Roblox.com começar com algo entre colchetes como “[PVT] Private”, apenas o “[PVT]” será usado para o apelido. Caso contrário, o nome completo da classificação será usado.
 
 #### Configuração de Canal
-- `!AnnounceChannel [channel]` - Defina um canal onde o RoVerificação postará uma mensagem todo vez que alguém se verificar. Default `null`.
-- `!VerifyChannel [channel]` - Defina um canal onde o RoVerificação irá apagar todas as mensagens exeto as de verificação. Default `null`.
-- `!CreateVerifyChannel` - Crie um categoria com dois canais. Um para ensinar a fazer a verificação, e outro para executar a verificação aos membros. Default `null`
+- `!AnnounceChannel [channel]` - Defina um canal onde o RoVer postará uma mensagem todo vez que alguém se verificar. 
+- `!VerifyChannel [channel]` - Defina um canal onde o RoVer irá apagar todas as mensagens exeto as de verificação. Default `null`.
+- `!CreateVerifyChannel` - Crie um categoria com dois canais. Um para ensinar a fazer a verificação, e outro para executar a verificação aos membros.
 
-#### Outro
-- `!JoinDM <on|off>` Set whether or not new users will be automatically direct messaged with verification instructions when joining this server. Default `on`.
+#### Outros
+- `!JoinDM <on|off>` Defina se novos usuários serão ou não automaticamente direcionados à mensagem automática com instruções de verificação ao ingressar neste servidor.
 - `!WelcomeMessage [welcome message]` - Set the message the user gets when they verify. Will be sent in DMs unless they use `!verify` command. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
 - `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`)
 
@@ -63,7 +65,7 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 ### Ajuda e suporte
 - `!RoVer` - Exibe uma descrição do RoVer.
 - `!Help` - Exibe uma lista de comandos.
-- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês)
+- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês) Comunidade [Em Português](https://robr.page/disc)
 - `!Invite` - Posts an invite link for RoVer.
 
 ### Administração de usuário
