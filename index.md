@@ -179,7 +179,9 @@ If you want users' group ranks to appear in their nickname, like "[PVT] evaera",
 ### RoVer Brazil 
 
 Feito com `Amor 💚` por:
+
 Fptbb 💛
+
 RafaRB 🌈
 
 ``Projeto Original:`` [evaera](https://github.com/evaera/RoVer)
