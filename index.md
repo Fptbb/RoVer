@@ -2,11 +2,6 @@
 layout: home
 ---
 
-
-
-
-<span class="warn">**Aviso!** O site não está 100% traduzido ao português brasileiro, previsão de 24h para a tradução total!</span>
-
 # Guia inicial
 A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Tudo isso é opcional:
 
@@ -14,7 +9,7 @@ A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no se
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
 3. Execute o comando `!VerifiedRole NomeExatoDoCargoAqui`, repondo o "RoleNameHere" para o nome do cargo que queiras.
 4. Modifique suas permissões de canal de texto, assim somente quem tem o cargo que você criou poderá ver/ler e falar nos canais de texto.
-5. Execute o comando `!CreateVerifyChannel`, que irá criar um canal de texto con instruções de verificação para novos membros.
+5. Execute o comando `!CreateVerifyChannel`, que irá criar um canal de texto com instruções de verificação para novos membros.
 
 Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGrupo>` para criar os cargos vinculados ao seu grupo.
 
@@ -56,6 +51,10 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 - `!JoinDM <on|off>` Defina se novos usuários serão ou não automaticamente direcionados à mensagem automática com instruções de verificação ao ingressar neste servidor.
 - `!WelcomeMessage [welcome message]` - Set the message the user gets when they verify. Will be sent in DMs unless they use `!verify` command. Available replacements are `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
 - `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`)
+
+
+<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 24h para a tradução total!</span>
+
 
 ### Ranks
 - `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Default `null`.
