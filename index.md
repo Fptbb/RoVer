@@ -181,11 +181,5 @@ If you want users' group ranks to appear in their nickname, like "[PVT] evaera",
 - Configure the group id to be used for the ranks: `!NicknameGroup 372372`
 - RoVer will automatically pick up on rank labels, so if the group rank is named "[PVT] Private", RoVer will only use the "[PVT]" for the nickname. If there is no label in the rank name, then RoVer will use the entire rank name instead.
 
-<span class="info">**RoVer Brazi.** Feito com `Amor 💚` por:
-
-Fptbb 💛
-
-RafaRB 🌈
-
-``Projeto Original:`` [evaera](https://github.com/evaera/RoVer)
- </span>
+<span class="info">**RoVer Brazi.** Feito com `Amor 💚` por:                                                                           Fptbb 💛                                                                                                                                RafaRB 🌈                                                                                                                         ``Projeto Original:`` [evaera](https://github.com/evaera/RoVer)
+ 
