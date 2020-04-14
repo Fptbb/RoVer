@@ -1,10 +1,10 @@
 ---
-layout: Inicio
+layout: home
 ---
 # Guia inicial
 A maneira mais fácil de usar o RoVer é [Adicionar a versão hospedada](https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264) no seu servidor. Tudo isso é opcional:
 
-1. Criar um cargo—;Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado"—;Esse é o qual todos os membros verificados iram receber.
+1. Criar um cargo —;(Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado")—; Esse é o qual todos os membros verificados iram receber.
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
 3. Execute o comando `!VerifiedRole RoleNameHere`, repondo o "RoleNameHere" para o nome do cargo que queiras.
 4. Modifique suas permissões de canal de texto, assim somente quem tem o cargo que você criou poderá ver/ler e falar nos canais de texto.
@@ -25,11 +25,11 @@ O RoVer é um bot do discord, com código aberto que permitirá que seus membros
 
 # Usando o RoVer
 
-Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário está no nosso banco de dados e ele possivelmente será verificado automaticamente. Se eles ainda não estiverem no banco de dados. If you are using the hosted version of the bot, then the user will automatically be given the verified state after they verify on the website. **However**, if you are hosting the bot yourself, the user will have to run the `!verify` command in order for the bot to check if they are verified.
+Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário está no nosso banco de dados e ele possivelmente será verificado automaticamente. Se você não estiver verificado, o sistema pedirá normalmente pra verificar-se na pagina do Ro-Ver. Após fazer a verificação no website você deverá dar `!verify` no canal escolhido para verificação.
 
-You should probably make a read-only channel in the server explaining these processes to your members. (You can do this automatically with the !CreateVerifyChannel command). After you add the bot to your server, you can customize RoVer with the following commands. You must have the `Manage Server` permission or a role named "RoVer Admin" in the Discord server in order to use these commands.
+Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus membros na verificação, não preisa desse trabalho todo! Você pode fazer tudo isso automaticamente! Basta executar o comando `!CreateVerifyChannel`. Depois de adicionar o RoVer no seu servidor você também pode custumizar o Rover seguindo alguns comandos listados abaixo. Ah, lembrando você precisa da permissão de `Manage Server` ou o cargo `RoVer Admin` no servidor do discord que deseja usar os comandos.
 
-<span class="warn">**Please note** that the "RoVer" role must be above any other roles that you want RoVer to act on. Anyone with a role that's above the RoVer role will not be able to be verified. This is just how the Discord permission system works, so please make sure to account for it!</span>
+<span class="Atenção>**Porfavor, olhe!** that the "RoVer" role must be above any other roles that you want RoVer to act on. Anyone with a role that's above the RoVer role will not be able to be verified. This is just how the Discord permission system works, so please make sure to account for it!</span>
 
 ## Comandos
 <span class="info">**Note**: &lt;angled brackets&gt; denote *required* arguments, and [square brackets] denote *optional* arguments. They should not be included when you run the command.</span>
@@ -66,14 +66,14 @@ You can run any of the commands that have all optional arguments by themselves t
 - `!Support` - Pos
 - `!Invite` - Posts an invite link for RoVer.
 
-### User administration
+### Administração de usuário
 - `!Update <@user>` - Forcibly update verification status of a user, same as them running `!verify`. Requires "Manage Server" or a role named "RoVer Updater".
 
-### User commands
+### Comandos De Usuário
 - `!Whois <@user>` - Get a link to a verified user's profile.
 - `!Verify` - Verifies the user who runs this command.
 
-## Magic Roles
+## Cargos Mágicos
 Magic roles are special role names that can give specific users in your server special power. There are no commands needed to use these, all you need to do is create a role in your server matching these exact names and assign them to users. These roles are checked for by name exactly, so if you create these roles on your server, ensure that they are spelled and capitalized exactly the same as they appear below.
 
 - `RoVer Bypass` - RoVer will ignore users with a role called "RoVer Bypass", so you can give them custom names or give people a member role when they aren't actually verified or in a group.
