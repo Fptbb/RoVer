@@ -100,7 +100,6 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
      - Você também pode vincular a classificação `0` pessoas que não estão no grupo.
   - Se o usuário atender aos requisitos de qualquer um dos grupos, ele será considerado como tendo a função.
 
-<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 9h para a tradução total!</span>
 
 ### Exemplos
 
@@ -178,6 +177,7 @@ Para criar uma função para todos os membros que estão no DevForum, têm OBC o
 
 Se você deseja que as classificações do grupo de usuários apareçam no apelido, como "[PVT] evaera", siga estas etapas:
 
--Verifique-s RANK está presente em algum lugar no formato de apelido: `!NicknameFormat %RANK% %USERNAME%`
-- Configure the group id to be used for the ranks: `!NicknameGroup 372372`
-- RoVer will automatically pick up on rank labels, so if the group rank is named "[PVT] Private", RoVer will only use the "[PVT]" for the nickname. If there is no label in the rank name, then RoVer will use the entire rank name instead.
+-Verifique-se se o RANK está presente em algum lugar no formato de apelido: `!NicknameFormat %RANK% %USERNAME%`
+- Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
+- O RoVer selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
+
