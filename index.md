@@ -82,14 +82,16 @@ Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um 
 - `RoVer Admin` - o RoVer deixará todo mundo que tenha o cargo "RoVer Admin" a executar qualquer comando do rover no servidor mesmo que ele não tenha a permissão de `"MANEGE SERVER"`
 - `RoVer Updater` - Com o cargo "RoVer Updater", qualquer pessoa pode executar o comando `!update` e outros comandos, menos os de admins
 
-<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 15h para a tradução total!</span>
+
 
 ## Integrando Com Os Grupos Do Roblox
-Group bindings can be created to keep Discord roles up to date with Roblox group ranks. RoVer does not support or plan to support changing group ranks or shouts on Roblox.com, and you should be wary of any bots that offer this functionality, as this introduces a major security risk.
+É possível criar ligações de grupo para manter as funções do Discord atualizadas com as classificações do grupo do Roblox. O RoVer não oferece suporte ou planeja oferecer suporte a alterações de ranks ou shouts no seu grupo do Roblox.com, e você deve ter cuidado com os bots que oferecem essa funcionalidade, pois isso apresenta um grande risco à segurança.
 
-Group bindings can be created with the `!Bind` command.
-- The first argument in the Bind command is the Discord role name.
-  - This needs to be in quotation marks if it has spaces
+<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 9h para a tradução total!</span>
+
+Vinculações de grupo podem ser feitas com o comando `!Bind`.
+- O primeiro argumento no comando bind é o nome exato do cargo do discord.
+  - Ah, lembre-se que isso precisa estar entre aspas ("") caso tenha um espaço.
 - After that, you can pass an unlimited amount of groups with a list of ranks for each group.
   - The groups are in the format `<group_id>:<rank_number>` (e.g. `372372:135`).
     - You can find the Roblox group ranks for each role in a Roblox group on the Roblox group admin > roles page; it is a number between 1 and 255.
