@@ -15,7 +15,7 @@ Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGru
 
 # Oque é isso?
 
-Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo Fptbb.
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo Fptbb e traduzido pelo RafaRB.
 O RoVer é um bot do discord, com código aberto que permitirá que seus membros autentiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
 - Falar com confiança, pois todo mundo sabe quem é quem.
@@ -87,38 +87,40 @@ Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um 
 ## Integrando Com Os Grupos Do Roblox
 É possível criar ligações de grupo para manter as funções do Discord atualizadas com as classificações do grupo do Roblox. O RoVer não oferece suporte ou planeja oferecer suporte a alterações de ranks ou shouts no seu grupo do Roblox.com, e você deve ter cuidado com os bots que oferecem essa funcionalidade, pois isso apresenta um grande risco à segurança.
 
-<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 9h para a tradução total!</span>
+
 
 Vinculações de grupo podem ser feitas com o comando `!Bind`.
 - O primeiro argumento no comando bind é o nome exato do cargo do discord.
   - Ah, lembre-se que isso precisa estar entre aspas ("") caso tenha um espaço.
-- After that, you can pass an unlimited amount of groups with a list of ranks for each group.
-  - The groups are in the format `<group_id>:<rank_number>` (e.g. `372372:135`).
-    - You can find the Roblox group ranks for each role in a Roblox group on the Roblox group admin > roles page; it is a number between 1 and 255.
-    - You can provide a list of ranks, like `<groupid>:<rank>,<rank>,<rank>` (e.g. `372372:135,150,250`).
-    - You can provide a range of ranks instead of listing them out, like `1-130`, e.g. (`372372:1-130,255`, which will count for anyone who has a rank between 1 and 130 [inclusive] or the rank 255).
-     - You can also bind the rank `0` to bind rank for people who are *not* in the group.
-  - If the user meets the requirements for *any* of the groups, they will be considered to have the role.
+- Depois disso, você pode passar uma quantidade ilimitada de grupos com uma lista de classificações para cada grupo.
+  - Os formatos de grupos são: `<id_do_grupo>:<NumeroDoRank>` (ex. `372372:135`).
+    - Você pode encontrar as classificações do grupo Roblox para cada função em um grupo Roblox na página admin> funções do grupo Roblox; é um número entre 1 e 255..
+    - Você pode fornecer uma lista de classificações, como `<groupid>:<rank>,<rank>,<rank>(por exemplo `372372:135,150,250`).
+    - Você pode fornecer uma série de classificações em vez de listá-las, como `1-130`, por exemplo, ( 372372:1-130,255, que contará para qualquer pessoa que tenha uma classificação entre 1 e 130 [inclusive] ou a classificação 255).
+     - Você também pode vincular a classificação `0` pessoas que não estão no grupo.
+  - Se o usuário atender aos requisitos de qualquer um dos grupos, ele será considerado como tendo a função.
 
-### Examples
+<span class="warn">**Aviso!**  Apartir daqui, o site não está 100% traduzido ao português brasileiro, nós temos uma previsão de 9h para a tradução total!</span>
 
-<span class="warn">**Note**: You need to put the Discord role name in quotation marks if it has spaces. If you don't do this you will get unexpected results.</span>
+### Exemplos
 
-- Use the following command to set up giving a role to all members of a group:
+<span class="warn">**Nota**: Você precisa colocar o nome da função Discord entre aspas, se houver espaços. Se você não fizer isso, obterá resultados inesperados..</span>
+
+- Use o seguinte comando para configurar a atribuição de uma função a todos os membros de um grupo:
 
   `!Bind "Group Member" 372372`
 
-- Use the following command to set up giving a role to members of a certain rank in a group:
+- Use o seguinte comando para configurar a atribuição de uma função aos membros de uma determinada classificação em um grupo:
 
   `!Bind "Group Owner" 372372:255`
 
-- Use the following command to set up giving a role to members of a **certain range** of rank in a group:
+- Use o seguinte comando para configurar a atribuição de uma função aos membros de uma **determinada classificação** em um grupo:
 
   `!Bind "High Rank" 372372:200-254` 
 
-- Use the following command to set up giving a role to a specific set of ranks in a group:
+- Use o seguinte comando para configurar a atribuição de uma função a um conjunto específico de classificações em um grupo:
 
-  `!Bind "Group Leaders" 372372:50,100-150,200` - This will bind a rank for users with a rank 50, anywhere from 100 to 150 (including 111, 122, etc), and the rank 200
+  `!Bind "Group Leaders" 372372:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
 
 - Use the following command to set up giving a role to a user who meets the requirements in any of a list of groups
 
