@@ -126,59 +126,58 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
 
   `!Bind "Faction Leader" 372372:250 372838:255 29393:250-255` - This will give the user the `Faction Leader` Discord role when they are rank 250 in the first group, *or* rank 255 in the second group, *or* ranks 250 through 255 in the last group.
 
-- Use the following command to unbind a role from a group:
+- Use o seguinte comando para desvincular uma função de um grupo:
 
-  `!Unbind Group Member` where `Group Member` is the *Discord role name*
+  `!Unbind Group Member` Onde `Group Member` é o nome de um *Cargo do Discord*
 
-### Virtual groups
+### Grupos Virtuais
 
-Virtual groups are a way to bind ranks using the group rank binding system for external services that need not be Roblox groups, such as the developer forum. Currently, these are available by default:
+Grupos virtuais são uma maneira de vincular classificações usando o sistema de ligação de classificação de grupo para serviços externos que não precisam ser grupos Roblox, como o fórum do desenvolvedor. Atualmente, eles estão disponíveis por padrão:
 
 #### DevForum (devforum.roblox.com)
-- `DevForumNewMember` - "Member" rank on the DevForum (as of Feb 2020)
-- `DevForumRegular` - "Regular" rank on the DevForum (as of Feb 2020)
-- `DevForumAccess` - DevForum access (either regular or member)
-- `DevForumTopContributor` - DevForum Top Contributor
-- `CommunitySage` - DevForum Community Sage
-- `PostApproval` DevForum Post Approval team member
-- `RobloxStaff` - A Roblox staff member (based on DevForum rank)
+- `DevForumNewMember` - rank "Membro" no DevForum (as of Feb 2020)
+- `DevForumRegular` - "Regular" rank no DevForum (as of Feb 2020)
+- `DevForumAccess` -  Acesso ao DevForum (Regular ou membro)
+- `DevForumTopContributor` - Top Contribuidor no DevForum 
+- `CommunitySage` - Sábio da comunidade DevForum
+- `PostApproval` Membro da equipe de aprovação do DevForum Post
+- `RobloxStaff` - Um membro da equipe do Roblox (baseado na classificação do DevForum)
 
-#### Assets & Ownership
-- `GamePass:<gamepass_id>` -  Binds ownership of a game pass, takes the id as an argument
-- `Badge:<badge_id>` - Binds ownership of a badge, takes the id as an argument
-- `Asset:<asset_id>` - Binds ownership of an asset, takes the id as an argument
+#### Comercial & Propriedade
+- `GamePass:<gamepass_id>` -  Vincula a propriedade de uma gamepass, tem o id como argumento.
+- `Badge:<badge_id>` - Vincula a propriedade de uma badge, tem o id como argumento.
+- `Asset:<asset_id>` - Vincula a propriedade de um asset, tem o id como argumento.
+#### Usuários
+- `Friend:<user_id>` - Vincula ser amigo ao usuário especificado no Roblox
+- `NBC` - Sem roblox premium
+- `Premium` - Vincula ao Roblox Premium
 
-#### Users
-- `Friend:<user_id>` - Binds being a friend to the given user on Roblox
-- `NBC` - No builders club or premium
-- `Premium` - Roblox Premium
+#### Afiliações de grupo
+- `Ally:<group_id>`* - Vincula estar em um grupo que é aliado pelo id do grupo
+- `Enemy:<group_id>`* -  Vincula estar em um grupo inimigo pelo id do grupo
 
-#### Group Affiliations
-- `Ally:<group_id>`* - Binds being in a group that is allied to group_id
-- `Enemy:<group_id>`* - Binds being in a group that is an enemy of to group_id
 
-<small>* indicates a heavily-cached resource that cannot be manually cleared. The cache will expire every two hours on the official version.</small>
 
-To create a role for all members of the dev forum in your server, use the following command:
+Para criar uma função para todos os membros do fórum de desenvolvimento em seu servidor, use o seguinte comando:
 
 `!Bind DevForumMember DevForum`
 
-To create a role for all members who own a specific asset, use the following command:
+Para criar uma função para todos os membros que possuem um ativo específico, use o seguinte comando:
 
 `!Bind Winner Asset:424242`
 
-To create a role for all members who own at least one of two assets, use the following command:
+Para criar uma função para todos os membros que possuem pelo menos um dos dois ativos, use o seguinte comando:
 
 `!Bind Winner Asset:424242 Asset:525252`
 
-To create a role for all members who are either in the DevForum, have OBC, or is in group 372372 as an owner:
+Para criar uma função para todos os membros que estão no DevForum, têm OBC ou estão no grupo 372372 como proprietário:
 
 `!Bind DevForumOrOBC DevForum OBC 372372:255`
 
-### Ranks in nicknames
+### Classificações em apelidos
 
-If you want users' group ranks to appear in their nickname, like "[PVT] evaera", follow these steps:
+Se você deseja que as classificações do grupo de usuários apareçam no apelido, como "[PVT] evaera", siga estas etapas:
 
-- Ensure the RANK is present somewhere in the nickname format: `!NicknameFormat %RANK% %USERNAME%`
+-Verifique-s RANK está presente em algum lugar no formato de apelido: `!NicknameFormat %RANK% %USERNAME%`
 - Configure the group id to be used for the ranks: `!NicknameGroup 372372`
 - RoVer will automatically pick up on rank labels, so if the group rank is named "[PVT] Private", RoVer will only use the "[PVT]" for the nickname. If there is no label in the rank name, then RoVer will use the entire rank name instead.
