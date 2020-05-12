@@ -75,59 +75,59 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 - `!Verify` - Se verifique com esse comando!
 
 ## Cargos Mágicos
-Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um nome específico para a mágica acontecer, eles fazem com que você não precisa dar nenhuma permissão especial ao cargo, o rover irá identificar que aquela pessoa tem aquele cargo específico e irá permitir o uso do comando! Legal né!
+Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um nome específico para a mágica acontecer, eles fazem com que você não precise dar nenhuma permissão especial ao cargo, o roverificação irá identificar que aquela pessoa tem aquele cargo específico e irá permitir o uso do comando! Legal né!
 
-- `RoVer Bypass` -O RoVer irá ignorar as pessoas q tem o cargo "RoVer Bypass", Então, você pode dar apelidos custumizados a uma pessoa, ou você pode atribuir um cargo a uma pessoa mesmo que ela não tenha esse cargo no grupo ou nem esteja no grupo!
+- `RoVer Bypass` -O RoVerificação irá ignorar as pessoas q tem o cargo "RoVer Bypass", Então, você pode dar apelidos customizados a uma pessoa, ou você pode atribuir um cargo a uma pessoa mesmo que ela não tenha esse cargo no grupo ou nem esteja no grupo!
 - `RoVer Nickname Bypass` - A mesma coisa que o RoVer Bypass, mas apenas para nomes de usuário. Cargos ainda seram dados.
-- `RoVer Admin` - o RoVer deixará todo mundo que tenha o cargo "RoVer Admin" a executar qualquer comando do rover no servidor mesmo que ele não tenha a permissão de `"MANEGE SERVER"`
+- `RoVer Admin` - O RoVerificação deixará todo mundo que tenha o cargo "RoVer Admin" a executar qualquer comando do roverificação no servidor mesmo que ele não tenha a permissão de `"MANEGE SERVER"`
 - `RoVer Updater` - Com o cargo "RoVer Updater", qualquer pessoa pode executar o comando `!update` e outros comandos, menos os de admins
 
 
 
 ## Integrando Com Os Grupos Do Roblox
-É possível criar ligações de grupo para manter as funções do Discord atualizadas com as classificações do grupo do Roblox. O RoVer não oferece suporte ou planeja oferecer suporte a alterações de ranks ou shouts no seu grupo do Roblox.com, e você deve ter cuidado com os bots que oferecem essa funcionalidade, pois isso apresenta um grande risco à segurança.
+É possível criar ligações de grupo para manter os cargos do Discord atualizadas com as do grupo do Roblox. O RoVerificação não oferece suporte ou planeja oferecer suporte a alterações de ranks ou shouts no seu grupo do Roblox.com, e você deve ter cuidado com os bots que oferecem essa funcionalidade, pois isso apresenta um grande risco à segurança. Caso queira um bot que faça esse tipo de modificação, aconselho criar seu proprio, um bom começo e criando uma copia identica do RoVer, como essa. Mas voltando ao assunto principal:
 
 
 
 Vinculações de grupo podem ser feitas com o comando `!Bind`.
 - O primeiro argumento no comando bind é o nome exato do cargo do discord.
-  - Ah, lembre-se que isso precisa estar entre aspas ("") caso tenha um espaço.
+  - Ah, lembre-se que ele precisa estar entre aspas ("") caso tenha um espaço.
 - Depois disso, você pode passar uma quantidade ilimitada de grupos com uma lista de classificações para cada grupo.
   - Os formatos de grupos são: `<id_do_grupo>:<NumeroDoRank>` (ex. `372372:135`).
-    - Você pode encontrar as classificações do grupo Roblox para cada função em um grupo Roblox na página admin> funções do grupo Roblox; é um número entre 1 e 255..
-    - Você pode fornecer uma lista de classificações, como `<groupid>:<rank>,<rank>,<rank>(por exemplo `372372:135,150,250`).
-    - Você pode fornecer uma série de classificações em vez de listá-las, como `1-130`, por exemplo, ( 372372:1-130,255, que contará para qualquer pessoa que tenha uma classificação entre 1 e 130 [inclusive] ou a classificação 255).
-     - Você também pode vincular a classificação `0` pessoas que não estão no grupo.
-  - Se o usuário atender aos requisitos de qualquer um dos grupos, ele será considerado como tendo a função.
+    - Você pode encontrar os ranks do grupo Roblox para cada role em um grupo Roblox na página Configurar grupo > Funções no Roblox; é um número entre 1 e 255..
+    - Você pode fornecer uma lista de ranks, como `<groupid>:<rank>,<rank>,<rank>(por exemplo `372372:135,150,250`).
+    - Você pode fornecer uma série de ranks em vez de listá-las, como `1-130`, por exemplo, ( 372372:1-130,255, que contará para qualquer pessoa que tenha uma classificação entre 1 e 130 [inclusive 130] ou a classificação 255).
+     - Você também pode vincular o rank `0` a pessoas que não estão no grupo.
+  - Se o usuário atender aos requisitos de qualquer um dos grupos, ele ira receber o cargo.
 
 
 ### Exemplos
 
-<span class="warn">**Nota**: Você precisa colocar o nome da função Discord entre aspas, se houver espaços. Se você não fizer isso, obterá resultados inesperados..</span>
+<span class="warn">**Nota**: Você precisa colocar o nome do cargo do Discord entre aspas, se houver espaços. Se você não fizer isso, obterá resultados inesperados..</span>
 
 - Use o seguinte comando para configurar a atribuição de uma função a todos os membros de um grupo:
 
-  `!Bind "Group Member" 372372`
+  `!Bind "Group Member" 3137245`
 
 - Use o seguinte comando para configurar a atribuição de uma função aos membros de uma determinada classificação em um grupo:
 
-  `!Bind "Group Owner" 372372:255`
+  `!Bind "Group Owner" 3137245:255`
 
 - Use o seguinte comando para configurar a atribuição de uma função aos membros de uma **determinada classificação** em um grupo:
 
-  `!Bind "High Rank" 372372:200-254` 
+  `!Bind "High Rank" 3137245:200-254` 
 
 - Use o seguinte comando para configurar a atribuição de uma função a um conjunto específico de classificações em um grupo:
 
-  `!Bind "Group Leaders" 372372:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
+  `!Bind "Group Leaders" 3137245:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
 
 - Use o comando a seguir para dar um cargo a um membro que conclua qualquer um dos requerimentos nessesarios para tal.
 
-  `!Bind "Lider de Facção" 372372:250 372838:255 29393:250-255` - Isso vai dar ao usuario o cargo `Lider de Facção` no discord quando ele for rank 250 no primeiro grupo, *or* rank 255 no segundo grupo, *or* ranks 250 ate 255 no terceiro.
+  `!Bind "Lider de Facção" 3137245:250 5943549:255 5099039:250-255` - Isso vai dar ao usuario o cargo `Lider de Facção` no discord quando ele for rank 250 no primeiro grupo, *or* rank 255 no segundo grupo, *or* ranks 250 ate 255 no terceiro.
 
-- Use o seguinte comando para desvincular uma função de um grupo:
+- Use o seguinte comando para desvincular uma role de um grupo:
 
-  `!Unbind Group Member` Onde `Group Member` é o nome de um *Cargo do Discord*
+  `!Unbind `Group Member` Onde `Group Member` é o nome de um *Cargo do Discord*
 
 ### Grupos Virtuais
 
