@@ -3,32 +3,32 @@ layout: home
 ---
 
 # Guia inicial
-A maneira mais fácil de usar o RoVer é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Temos um exemplo de como fazer a verificação no seu servidor, tudo isso é opcional:
+A maneira mais fácil de usar o RoVerificação é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Temos um exemplo de como fazer a verificação no seu servidor, tudo isso é opcional:
 
-1. Criar um cargo (Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado") Esse é o qual todos os membros verificados iram receber.
+1. Criar um cargo (Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado") Esse é o cargo que todos os membros verificados iram receber.
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
-3. Execute o comando `!VerifiedRole NomeExatoDoCargoAqui`, repondo o "RoleNameHere" para o nome do cargo que queiras.
+3. Execute o comando `!VerifiedRole NomeExatoDoCargoAqui`, repondo o "RoleNameHere" para o nome do cargo que quer ligar.
 4. Modifique suas permissões de canal de texto, assim somente quem tem o cargo que você criou poderá ver/ler e falar nos canais de texto.
 5. Execute o comando `!CreateVerifyChannel`, que irá criar um canal de texto com instruções de verificação para novos membros.
 
-Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGrupo>` para criar os cargos vinculados ao seu grupo.
+Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGrupo>` para criar os cargos do seu grupo no discord e configura-los automaticamente ao seu grupo.
 
 # Oque é isso?
 
-Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo Fptbb e traduzido pelo RafaRB.
-O RoVer é um bot do discord, com código aberto que permitirá que seus membros autentiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da pagina feita pelo RafaRB.
+O RoVer é um bot do discord, com código aberto que permitirá que seus membros verifiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
 - Falar com confiança, pois todo mundo sabe quem é quem.
 - Adicionando um passo extra entre os trolls & spammers reduzindo drasticamene atividades não desejadas.
-- Integrando com o seu grupo no Roblox, mostrando ranks e dando cargos baseados no do seu grupo
+- Integrando com o seu grupo no Roblox, mostrando ranks e dando cargos baseados no do seu grupo.
 - O banco de dados de verificação já preenchido com milhares de contas Discord-Roblox, ou seja alguns membros já podem entrar verificados no seu servidor. 
 - Após fazer a verificação no site, você precisará digitar o comando `!verificar`
 
 # Usando o RoVer
 
-Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário está no nosso banco de dados e ele possivelmente será verificado automaticamente. Se você não estiver verificado, o sistema pedirá normalmente pra verificar-se na pagina do Ro-Ver. Após fazer a verificação no website você deverá dar `!verify` no canal escolhido para verificação.
+Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário está no nosso banco de dados e ele possivelmente será verificado automaticamente. Se você não estiver verificado, o sistema pedirá normalmente pra verificar-se na pagina do Ro-Ver. Após fazer a verificação no site você deverá dar `!verify` no canal escolhido para verificação.
 
-Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus membros na verificação, não preisa desse trabalho todo! Você pode fazer tudo isso automaticamente! Basta executar o comando `!CreateVerifyChannel`. Depois de adicionar o RoVer no seu servidor você também pode custumizar o Rover seguindo alguns comandos listados abaixo. Ah, lembrando você precisa da permissão de `Manage Server` ou o cargo `RoVer Admin` no servidor do discord que deseja usar os comandos.
+Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar os seus membros na verificação, não precisa desse trabalho todo! Você pode fazer tudo isso automaticamente! Basta executar o comando `!CreateVerifyChannel`. Depois de adicionar o RoVer no seu servidor você também pode custumizar o Rover seguindo alguns comandos listados abaixo. Ah, lembrando você precisa da permissão de `Manage Server` ou o cargo `RoVer Admin` no servidor do discord que deseja usar os comandos.
 
 <span class="warn">**Porfavor, olhe!** Para que o RoVer funcione corretamente o cargo "RoVer" deve estar acima de todos os que o mesmo irá gerenciar. Se não, o bot não irá funcionar corretamente!</span>
 
@@ -38,7 +38,7 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 ## Configuração do Servidor
 
 #### Configuração de apelidos
-- `!Nickname <on|off>` - Defina se um novo usuário irá ser nomeado com seu apelido do Roblox ou não. Comum `on`
+- `!Nickname <on|off>` - Defina se um novo usuário irá ser nomeado com seu apelido do Roblox ou não. Por padrão vem `on`
 - `!NicknameFormat [formato]` - Defina se o Nome de usuário irá conter o Nome de usuário do roblox, id do usuário do roblox e etc. Por exemplo, argumentos válidos: `%USERNAME%`, `%USERID%`, `%SERVER%`, `%RANK%`, `%DISCORDNAME%`, and `%DISCORDID%`. Example: `%USERNAME% - (%USERID%)`. Comum `%USERNAME%`
 - `!NicknameGroup [id_do_grupo]` - O ID do grupo a ser usado para a substituição do %RANK% em apelidos. Isso permite que você faça com que seus nomes de usuário sejam tipo [isso](https://i.imgur.com/4VA1vq9.png). Observe que, se o nome do seu grupo no Roblox.com começar com algo entre colchetes como “[PVT] Private”, apenas o “[PVT]” será usado para o apelido. Caso contrário, o nome completo da classificação será usado.
 
@@ -65,7 +65,7 @@ Você provavelmente irá fazer um canal de "Como Verificar", para ajudar os seus
 - `!RoVer` - Exibe uma descrição do RoVer.
 - `!Help` - Exibe uma lista de comandos.
 - `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
-- `!Invite` - Postarei o invite do Rover.
+- `!Invite` - Postarei o invite do Roverificação.
 
 ### Administração de usuário
 - `!Update <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
@@ -121,9 +121,9 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
 
   `!Bind "Group Leaders" 372372:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
 
-- Use the following command to set up giving a role to a user who meets the requirements in any of a list of groups
+- Use o comando a seguir para dar um cargo a um membro que conclua qualquer um dos requerimentos nessesarios para tal.
 
-  `!Bind "Faction Leader" 372372:250 372838:255 29393:250-255` - This will give the user the `Faction Leader` Discord role when they are rank 250 in the first group, *or* rank 255 in the second group, *or* ranks 250 through 255 in the last group.
+  `!Bind "Lider de Facção" 372372:250 372838:255 29393:250-255` - Isso vai dar ao usuario o cargo `Lider de Facção` no discord quando ele for rank 250 no primeiro grupo, *or* rank 255 no segundo grupo, *or* ranks 250 ate 255 no terceiro.
 
 - Use o seguinte comando para desvincular uma função de um grupo:
 
