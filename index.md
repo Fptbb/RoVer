@@ -63,7 +63,7 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 
 ### Ajuda e suporte
 - `!ajuda` - Exibe uma lista de comandos.
-- `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
+- `!suporte` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
 - `!Invite` - Postarei o invite do Roverificação.
 
 ### Administração de usuário
