@@ -62,17 +62,16 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 - `!CreateGroupRanks <IdDoGrupo>` - Cria todos os cargos do grupo do roblox ao discord (Se já estiver um cargo com o mesmo nome o bot irá criar outro cargo)
 
 ### Ajuda e suporte
-- `!RoVer` - Exibe uma descrição do RoVer.
-- `!Help` - Exibe uma lista de comandos.
+- `!ajuda` - Exibe uma lista de comandos.
 - `!Support` - Ajuda? link do [servidor oficial](https://discord.gg/wHXUztT) do rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
 - `!Invite` - Postarei o invite do Roverificação.
 
 ### Administração de usuário
-- `!Update <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
+- `!atualizar <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
 
 ### Comandos De Usuário
-- `!Whois <@user>` - Obtenha o link do perfil (Do Roblox) de um usuário verificado.
-- `!Verify` - Se verifique com esse comando!
+- `!queme <@user>` - Obtenha o link do perfil (Do Roblox) de um usuário verificado.
+- `!verificar` - Se verifique com esse comando!
 
 ## Cargos Mágicos
 Os Cargos mágicos são mágicos! Eles tem super poderes, precisam apenas de um nome específico para a mágica acontecer, eles fazem com que você não precise dar nenhuma permissão especial ao cargo, o roverificação irá identificar que aquela pessoa tem aquele cargo específico e irá permitir o uso do comando! Legal né!
@@ -107,19 +106,19 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
 
 - Use o seguinte comando para configurar a atribuição de uma função a todos os membros de um grupo:
 
-  `!Bind "Group Member" 3137245`
+  `!Bind "Membro" 3137245`
 
 - Use o seguinte comando para configurar a atribuição de uma função aos membros de uma determinada classificação em um grupo:
 
-  `!Bind "Group Owner" 3137245:255`
+  `!Bind "Dono do Grupo" 3137245:255`
 
 - Use o seguinte comando para configurar a atribuição de uma função aos membros de uma **determinada classificação** em um grupo:
 
-  `!Bind "High Rank" 3137245:200-254` 
+  `!Bind "Rank Alto" 3137245:200-254` 
 
 - Use o seguinte comando para configurar a atribuição de uma função a um conjunto específico de classificações em um grupo:
 
-  `!Bind "Group Leaders" 3137245:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
+  `!Bind "Lider de Grupo" 3137245:50,100-150,200` - Isso vinculará uma classificação para usuários com uma classificação 50, de 100 a 150 (incluindo 111, 122, etc) e a classificação 200
 
 - Use o comando a seguir para dar um cargo a um membro que conclua qualquer um dos requerimentos nessesarios para tal.
 
@@ -127,7 +126,7 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
 
 - Use o seguinte comando para desvincular uma role de um grupo:
 
-  `!Unbind `Group Member` Onde `Group Member` é o nome de um *Cargo do Discord*
+  `!Unbind `Membro` Onde `Membro` é o nome de um *Cargo do Discord*
 
 ### Grupos Virtuais
 
@@ -163,11 +162,11 @@ Para criar uma função para todos os membros do DevForum em seu servidor, use o
 
 Para criar uma função para todos os membros que possuem um Asset específico, use o seguinte comando:
 
-`!Bind Winner Asset:424242`
+`!Bind "Vencedor do Concurso" Asset:424242`
 
 Para criar uma função para todos os membros que possuem pelo menos um dos dois Assets, use o seguinte comando:
 
-`!Bind Winner Asset:424242 Asset:525252`
+`!Bind "Vencedor do Concurso" Asset:424242 Asset:525252`
 
 Para criar uma função para todos os membros que estão no DevForum, têm OBC ou estão no grupo 3137245 como proprietário:
 
