@@ -131,53 +131,53 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
 
 ### Grupos Virtuais
 
-Grupos virtuais são uma maneira de vincular classificações usando o sistema de ligação de classificação de grupo para serviços externos que não precisam ser grupos Roblox, como o fórum do desenvolvedor. Atualmente, eles estão disponíveis por padrão:
+Grupos virtuais são uma maneira de vincular classificações usando o sistema de "bind" de classificação de grupo para serviços externos que não precisam ser grupos Roblox, como o fórum do desenvolvedor. Atualmente, eles estão disponíveis por padrão:
 
 #### DevForum (devforum.roblox.com)
-- `DevForumNewMember` - rank "Membro" no DevForum (as of Feb 2020)
-- `DevForumRegular` - "Regular" rank no DevForum (as of Feb 2020)
+- `DevForumNewMember` - rank "Membro" no DevForum
+- `DevForumRegular` - "Regular" rank no DevForum
 - `DevForumAccess` -  Acesso ao DevForum (Regular ou membro)
-- `DevForumTopContributor` - Top Contribuidor no DevForum 
-- `CommunitySage` - Sábio da comunidade DevForum
-- `PostApproval` Membro da equipe de aprovação do DevForum Post
+- `DevForumTopContributor` - Top Contributor no DevForum 
+- `CommunitySage` - Community Sage no DevForum
+- `PostApproval` Membro da equipe de aprovação de Topicos no DevForum
 - `RobloxStaff` - Um membro da equipe do Roblox (baseado na classificação do DevForum)
 
 #### Comercial & Propriedade
-- `GamePass:<gamepass_id>` -  Vincula a propriedade de uma gamepass, tem o id como argumento.
-- `Badge:<badge_id>` - Vincula a propriedade de uma badge, tem o id como argumento.
-- `Asset:<asset_id>` - Vincula a propriedade de um asset, tem o id como argumento.
+- `GamePass:<gamepass_id>` -  Use com o id de uma gamepass pra dar um cargo a quem tem ela.
+- `Badge:<badge_id>` - Use com o id de uma badge pra dar um cargo a quem tem ela.
+- `Asset:<asset_id>` - Use com o id de uma asset (roupa, imagem, model) pra dar um cargo a quem tem ela.
 #### Usuários
-- `Friend:<user_id>` - Vincula ser amigo ao usuário especificado no Roblox
-- `NBC` - Sem roblox premium
-- `Premium` - Vincula ao Roblox Premium
+- `Friend:<user_id>` - Use com o id de um player para dar um cargo aos amigos desse player.
+- `NBC` - Use para dar um cargo a quem não tiver cargos pagos.
+- `Premium` - Use para dar um cargo a quem tiver Premium.
 
 #### Afiliações de grupo
-- `Ally:<group_id>`* - Vincula estar em um grupo que é aliado pelo id do grupo
-- `Enemy:<group_id>`* -  Vincula estar em um grupo inimigo pelo id do grupo
+- `Ally:<group_id>`* - Use com o id de um grupo para dar um cargo aos aliados desse grupo.
+- `Enemy:<group_id>`* -  Use com o id de um grupo para dar um cargo aos inimigos desse grupo.
 
 
 
-Para criar uma função para todos os membros do fórum de desenvolvimento em seu servidor, use o seguinte comando:
+Para criar uma função para todos os membros do DevForum em seu servidor, use o seguinte comando:
 
 `!Bind DevForumMember DevForum`
 
-Para criar uma função para todos os membros que possuem um ativo específico, use o seguinte comando:
+Para criar uma função para todos os membros que possuem um Asset específico, use o seguinte comando:
 
 `!Bind Winner Asset:424242`
 
-Para criar uma função para todos os membros que possuem pelo menos um dos dois ativos, use o seguinte comando:
+Para criar uma função para todos os membros que possuem pelo menos um dos dois Assets, use o seguinte comando:
 
 `!Bind Winner Asset:424242 Asset:525252`
 
-Para criar uma função para todos os membros que estão no DevForum, têm OBC ou estão no grupo 372372 como proprietário:
+Para criar uma função para todos os membros que estão no DevForum, têm OBC ou estão no grupo 3137245 como proprietário:
 
-`!Bind DevForumOrOBC DevForum OBC 372372:255`
+`!Bind DevForumOrOBC DevForum OBC 3137245:255`
 
 ### Classificações em apelidos
 
-Se você deseja que as classificações do grupo de usuários apareçam no apelido, como "[PVT] evaera", siga estas etapas:
+Se você deseja que as classificações do grupo de usuários apareçam no apelido, como "[PVT] fptbb", siga estas etapas:
 
 -Verifique-se se o RANK está presente em algum lugar no formato de apelido: `!NicknameFormat %RANK% %USERNAME%`
 - Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
-- O RoVer selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
+- O RoVerificação selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
 
