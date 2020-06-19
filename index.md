@@ -15,7 +15,7 @@ Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGru
 
 # Oque é isso?
 
-Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da pagina feita pelo RafaRB.
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da pagina feita pelo [RafaRB](https://www.roblox.com/users/187416020/profile).
 O RoVer é um bot do discord, com código aberto que permitirá que seus membros verifiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
 - Falar com confiança, pois todo mundo sabe quem é quem.
@@ -50,7 +50,7 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 #### Outros
 - `!JoinDM <on|off>` Defina se novos usuários serão ou não automaticamente direcionados à mensagem automática com instruções de verificação ao ingressar neste servidor.
 - `!WelcomeMessage [welcome message]` - Defina a mensagem de boas vindas quando um usuário executar o comando `!verify`. Os argumentos válidos são: `%USERNAME%`, `%USERID%`, `%SERVER%`, `%DISCORDNAME%`, and `%DISCORDID%`. Default `Welcome to %SERVER%, %USERNAME%!`.
-- `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`) <span class="note">**Temporariamente indisponível**</span>
+- `@RoVer prefix [prefix]` - Mude o prefixo do RoVerificação. (Padrão: `!`) <span class="note">**Cuidado, esse comando pode cair as vezes (oscilar).**</span>
 
 ### Ranks
 - `!VerifiedRole [Nome Exato Do Cargo]` - Defina o cargo que os membros verificados iram ganhar. Pré-Definido `nulo`.
