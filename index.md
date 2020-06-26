@@ -15,7 +15,7 @@ Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGru
 
 # Oque é isso?
 
-Somos uma versão brasileira do bot [RoVer](https://rover.link/) Hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da pagina feita pelo [RafaRB](https://www.roblox.com/users/187416020/profile).
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) **Verificado pelo Discord** e hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da pagina feita pelo [RafaRB](https://www.roblox.com/users/187416020/profile).
 O RoVer é um bot do discord, com código aberto que permitirá que seus membros verifiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
 - Falar com confiança, pois todo mundo sabe quem é quem.
