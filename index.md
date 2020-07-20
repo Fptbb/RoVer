@@ -3,7 +3,7 @@ layout: home
 ---
 
 # Guia inicial
-A maneira mais fácil de usar o RoVerificação é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Temos um exemplo de como fazer a verificação no seu servidor, tudo isso é opcional:
+A maneira mais fácil de usar o RoVerificação é: Primeiramente [Adicionar o RoVer no seu servidor](https://discordapp.com/oauth2/authorize?client_id=607617445246664759&scope=bot&permissions=402656264). Temos um exemplo de como fazer a verificação no seu servidor. Lembrando, tudo isso é opcional:
 
 1. Criar um cargo (Ele pode ser chamado de qualquer coisa, mas o termo mais popular é "Verificado") Esse é o cargo que todos os membros verificados iram receber.
 2. Mova o cargo "RoVer" para acima de todos os cargos que você queira que o bot gerencie.
