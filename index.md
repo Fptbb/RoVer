@@ -30,10 +30,10 @@ Quando um usuário entra no servidor o RoVer automaticamente checa se o usuário
 
 Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar os seus membros na verificação, não precisa desse trabalho todo! Você pode fazer tudo isso automaticamente! Basta executar o comando `!CreateVerifyChannel`. Depois de adicionar o RoVer no seu servidor você também pode custumizar o Rover seguindo alguns comandos listados abaixo. Ah, lembrando você precisa da permissão de `Manage Server` ou o cargo `RoVer Admin` no servidor do discord que deseja usar os comandos.
 
-<span class="warn">**Porfavor, olhe!** Para que o RoVer funcione corretamente o cargo "RoVer" deve estar acima de todos os que o mesmo irá gerenciar. Se não, o bot não irá funcionar corretamente!</span>
+<span class="warn">**ATENÇÃO!** Para que o RoVer funcione corretamente o cargo "RoVer" deve estar acima de todos os que o mesmo irá gerenciar. Se não, o bot não irá funcionar corretamente!</span>
 
 ## Comandos
-<span class="info">**Nota**: &lt;Colchetes angulares&gt; Não são argumentos *requiridos*, e os [colchetes] são argumentos *opcionais*. Esses argumentos não seram necessários na execução de um comando </span>
+<span class="info">**Note que:**: &lt;Colchetes angulares&gt; Não são argumentos *requiridos*, e os [colchetes] são argumentos *opcionais*. Esses argumentos não seram necessários na execução de um comando </span>
 
 ## Configuração do Servidor
 
@@ -180,3 +180,4 @@ Se você deseja que as classificações do grupo de usuários apareçam no apeli
 - Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
 - O RoVerificação selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
 
+<span class="info">**Informações Atualizadas Em**: 20/07/2020 às 16:21 por [RafaRB](https://www.roblox.com/users/187416020/profile) </span>
