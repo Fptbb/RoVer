@@ -180,4 +180,4 @@ Se você deseja que as classificações do grupo de usuários apareçam no apeli
 - Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
 - O RoVerificação selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
 
-<span class="info">**Informações Atualizadas Em**: 31/07/2020 às 20:23 por [RafaRB](https://www.roblox.com/users/187416020/profile) </span>
+<span class="info">**Informações Atualizadas Em**: 09/09/2020 às 07:11 por [RafaRB](https://www.roblox.com/users/187416020/profile) </span>
