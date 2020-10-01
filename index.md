@@ -15,7 +15,7 @@ Se você tem um grupo, você pode executar o comando `!CreateGroupRanks <IdDoGru
 
 # Oque é isso?
 
-Somos uma versão brasileira do bot [RoVer](https://rover.link/) **Verificado pelo Discord** e hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da página feita pelo [RafaRB](https://www.roblox.com/users/187416020/profile).
+Somos uma versão brasileira do bot [RoVer](https://rover.link/) **Verificado pelo Discord** e hospedada pelo [Fptbb](https://fptbb.com/), e com a tradução da página feita pelo [Rafaaa](https://www.roblox.com/users/187416020/profile).
 O RoVer é um bot do discord, com código aberto que permitirá que seus membros verifiquem com segurança a conta Roblox no seu servidor do Discord. Isso capacita sua comunidade Roblox com as seguintes vantagens:
 
 - Falar com confiança, pois todo mundo sabe quem é quem.
@@ -63,8 +63,11 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 
 ### Ajuda e suporte
 - `!ajuda` - Exibe uma lista de comandos.
-- `!suporte` - Quer ajuda? 'Xá' comigo! Link do [servidor oficial](https://discord.gg/wHXUztT) do Rover (em inglês). Ajuda em português? Também tenho!  Comunidade em português [Aqui](https://robr.page/disc)
 - `!Invite` - Postarei o invite do Roverificação.
+
+<span class="info">**Servidores de Suporte** - Suporte em inglês: Link do [servidor oficial](https://discord.gg/wHXUztT) do Rover (em inglês). </span>
+
+<span class="info">**Servidores de Suporte** - Suporte em Português [Aqui!] (robr.page/disc). Lembre-se de procurar o fptbb para ajuda. </span>
 
 ### Administração de usuário
 - `!atualizar <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
@@ -180,4 +183,4 @@ Se você deseja que as classificações do grupo de usuários apareçam no apeli
 - Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
 - O RoVerificação selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
 
-<span class="info">**Informações Atualizadas Em**: 16/09/2020 ao 12:19 por [RafaRB](https://www.roblox.com/users/187416020/profile) </span>
+<span class="info">**Informações Atualizadas Em**: 01/10/2020 às 16:28 horas pelo horário de Brasília por [RafaRB](https://www.roblox.com/users/187416020/profile) </span>
