@@ -67,7 +67,7 @@ Você provavelmente irá querer fazer um canal de "Como Verificar", para ajudar 
 
 <span class="info">**Servidores de Suporte** - Suporte em inglês: Link do [servidor oficial](https://discord.gg/wHXUztT) do Rover (em inglês). </span>
 
-<span class="info">**Servidores de Suporte** - Suporte em Português [Aqui!](robr.page/disc). Lembre-se de procurar o fptbb para ajuda. </span>
+<span class="info">**Servidores de Suporte** - Suporte em Português [Aqui!](robr.page/disc) Lembre-se de procurar o fptbb para ajuda. </span>
 
 ### Administração de usuário
 - `!atualizar <@user>` - Verificarei um usuário sem que o mesmo digite o comando `!verificar`. Para execução desse comando Requer: Permisssão de: `"Manage Server"` Ou um cargo chamado: `"RoVer Updater"`.
