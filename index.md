@@ -96,7 +96,7 @@ Vinculações de grupo podem ser feitas com o comando `!Bind`.
   - Ah, lembre-se que ele precisa estar entre aspas ("") caso tenha um espaço.
 - Depois disso, você pode passar uma quantidade ilimitada de grupos com uma lista de classificações para cada grupo.
   - Os formatos de grupos são: `<id_do_grupo>:<NumeroDoRank>` (ex. `372372:135`).
-    - Você pode encontrar os ranks do grupo Roblox para cada role em um grupo Roblox na página Configurar grupo > Funções no Roblox; é um número entre 1 e 255..
+    - Você pode encontrar os ranks do grupo Roblox para cada cargo em um grupo Roblox na página Configurar grupo > Funções no Roblox; é um número entre 1 e 255..
     - Você pode fornecer uma lista de ranks, como `<groupid>:<rank>,<rank>,<rank>(por exemplo `372372:135,150,250`).
     - Você pode fornecer uma série de ranks em vez de listá-las, como `1-130`, por exemplo, ( 372372:1-130,255, que contará para qualquer pessoa que tenha uma classificação entre 1 e 130 [inclusive 130] ou a classificação 255).
      - Você também pode vincular o rank `0` a pessoas que não estão no grupo.
@@ -183,4 +183,4 @@ Se você deseja que as classificações do grupo de usuários apareçam no apeli
 - Configure o ID do grupo a ser usado pelos ranks: `!NicknameGroup 372372`
 - O RoVerificação selecionará automaticamente os rótulos de classificação, portanto, se a classificação do grupo for denominada “[PVT] Private”, a RoVer usará apenas o “[PVT]” para o apelido. Se não houver um rótulo no nome da classificação, o RoVer usará o nome inteiro da classificação.
 
-<span class="info">**Informações Atualizadas Em**: 21/05/2020 às 16:15 horas pelo horário de Brasília por [Rafaaa](https://www.roblox.com/users/187416020/profile) </span>
+<span class="info">**Informações Atualizadas Em**: 21/05/2021 às 16:15 horas pelo horário de Brasília por [Rafaaa](https://www.roblox.com/users/187416020/profile) </span>
